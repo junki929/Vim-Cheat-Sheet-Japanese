@@ -1,119 +1,163 @@
-﻿
 <html>
 	<head>
 		<link rel=stylesheet type="text/css"href="vcsj.css">
 
-		<title>Vim-Cheat-Sheet 日本語翻訳</title>
+		<title>Vim-Cheat-Sheet ���{��|��</title>
 	</head>
 
  	<body bgcolor="#000000">
-		<h1 style="border:double;width:440px;padding-left:5px;color:white;background-color:black;"><font color="white">Vim-Cheat-Sheet 日本語翻訳</font></h1>
+		<h1 style="border:double;width:440px;padding-left:5px;color:white;background-color:black;"><font color="white">Vim-Cheat-Sheet ���{��|��</font></h1>
 		
-		<!--キーボード:一行目-->
-		<h2 style="border:outset;width:98px;height:40px;background-color:yellow">ESC<br><font size="1" color="#808080">ノーマルモード</font></h2>
+		.clearLeft { 
+		clear: left; 
+		}
 
+		<!--�L�[�{�[�h:��s��-->
 
-		<!--キーボード:二行目-->
-		<h2 class="key vcsj1"><div class="over half orange">!&nbsp;&nbsp;<font size="1" color="#808080">外部フィルタ</font><hr><div class="under half">1<font color="red" size="1">2</font></div></h2>
-		<h2 class="vcsj1">".<font color="red" size="1">1</font>&nbsp;&nbsp;<font size="1" color="#808080">スペック</font><hr> 2</h2> 
-		<h2 class="vcsj1"><div id="Half">#&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font><hr> 3</h2> 
-		<h2 class="vcsj1"><div id="Half">$&nbsp;&nbsp;<font size="1" color="#808080">行末に移動</font><hr> 4</h2> 
-		<h2 class="vcsj1"><div id="Half">%&nbsp;&nbsp;<font size="1" color="#808080">括弧に移動</font><hr> 5</h2>
-		<h2 class="vcsj1"><div id="Half2">&&nbsp;<font size="1" color="#808080">置換繰り返し</font><hr> 6</h2>
-		<h2 class="vcsj1"><div id="Half">'.<font size="1" color="#808080">ﾏｰｸ行へ移動</font><hr> 7</h2>
-		<h2 class="vcsj1"><div id="Half">(<font size="1" color="#808080">前文先頭へ移動</font><hr> 8</h2>
-		<h2 class="vcsj1"><div id="Half">)<font size="1" color="#808080">次文先頭へ移動</font><hr> 9</h2>
-		<h2 class="key vcsj1" style="padding-bottom:1px;"><div="over half">&nbsp;<hr><div class="under half orange">0<font size="1" color="#808080">行先頭へ移動</font></div></h2>
-		<h2 class="vcsj1"><div id="Half3">=&nbsp;&nbsp;<font size="1" color="#808080">ｵｰﾄﾌｫｰﾏｯﾄ</font><hr><div id="Half4"> -<font size="1" color="#808080">前行先頭へ移動</font></h2>
-				<h2 class="vcsj1"><div id="Half">|<font size="1" color="#808080">一桁目に移動</font><hr> <div id="Half4">^<font size="1" color="#808080">行先頭へ移動</font></h2>
-		<br>
+		<h2 style="width:100px;background-color:yellow">ESC<br><font size="1" color="#808080">�m�[�}�����[�h</font></h2>
+		
+		
+		<!--�L�[�{�[�h:��s��-->
+		<ul style="list-style:none">
 
-
-		<!--キーボード:三行目-->
-		<h2 class="vcsj3" style="margin-left:15px;">Q&nbsp;&nbsp;<font size="1" color="#808080">exモード</font><hr> q.<font size="1" color="#808080">入力記録開始</font></h2>
-		<h2 class="vcsj2">W<font size="1" color="#808080">次の単語に移動</font><hr> w<font size="1" color="#808080">次の単語に移動</font></h2>
-		<h2 class="vcsj2">E<font size="1" color="#808080">単語末尾へ移動</font><hr> e<font size="1" color="#808080">単語末尾へ移動</font></h2>
-		<h2 class="vcsj3"><font color="red">R</font>&nbsp;&nbsp;<font size="1" color="#808080">上書きモード</font><hr> r.&nbsp;<font size="1" color="#808080">ﾘﾌﾟﾚｰｽﾓｰﾄﾞ</font></h2>
-		<h2 class="vcsj2">T.&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font><hr> t.&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font></h2>
-		<h2 class="vcsj1"><div id="Half2">Y&nbsp;&nbsp;<font size="1" color="#808080">コピー</font><hr> <div id="Half6">y<font color="red" size="1">1,3</font>&nbsp;&nbsp;<font size="1" color="#808080">コピー</font></h2>
-		<h2 class="vcsj3">U&nbsp;<font size="1" color="#808080">行を元に戻す</font><hr> u&nbsp;&nbsp;<font size="1" color="#808080">元に戻す</font></h2>
-		<h2 class="vcsj3"><font color="red">I</font>&nbsp;&nbsp;<font size="1" color="#808080">挿入モード</font><hr> <font color="red">i</font>&nbsp;&nbsp;<font size="1" color="#808080">挿入モード</font></h2>
-		<h2 class="vcsj3"><font color="red">O</font>&nbsp;&nbsp;<font size="1" color="#808080">前に開く</font><hr> <font color="red">o</font><font size="1" color="#808080">行追加+挿入ﾓｰﾄﾞ</font></h2>
-		<h2 class="vcsj3">P&nbsp;&nbsp;<font size="1" color="#808080">前に貼り付け</font><hr> p<font color="red" size="1">1</font>&nbsp;&nbsp;<font size="1" color="#808080">後に貼り付け</font></h2>
-		<h2 class="vcsj1"><div id="Half2">@.&nbsp;&nbsp;<font size="1" color="#808080">記録を再生</font><hr> <div id="Half4">`&nbsp;&nbsp;<font size="1" color="#808080">ﾏｰｸへ移動</font></h2>
-		<h2 class="vcsj2">[.&nbsp;&nbsp;<font size="1" color="#808080">misc</font><hr> {<font size="1" color="#808080">前段落先頭へ</font></h2>
-		<br>
-
-
-		<!--キーボード:四行目-->
-		<h2 class="vcsj3" style="margin-left:30px;"><font color="red">A</font>&nbsp;&nbsp;<font size="1" color="#808080">挿入モード</font><hr> <font color="red">a</font>&nbsp;&nbsp;<font size="1" color="#808080">挿入モード</font></h2>
-		<h2 class="vcsj3"><font color="red">S</font><font size="1" color="#808080">削除+挿入ﾓｰﾄﾞ</font><hr> <font color="red">s</font><font size="1" color="#808080">削除+挿入ﾓｰﾄﾞ</font></h2>
-		<h2 class="vcsj1"><div id="Half2">D&nbsp;<font size="1" color="#808080">行末まで削除</font><hr> <div id="Half6">d<font color="red" size="1">1,3</font>&nbsp;&nbsp;<font size="1" color="#808080">削除</font></h2>
-		<h2 class="vcsj2">F.&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font><hr> f.&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font></h2>
-		<h2 class="vcsj1"><div id="Half">G&nbsp;&nbsp;<font size="1" color="#808080">ﾎﾞﾄﾑへ移動</font><hr> g.<font color="red" size="1">6</font>&nbsp;<font size="1" color="#808080">ｴｸｽﾄﾗｺﾏﾝﾄﾞ</font></h2>
-		<h2 class="vcsj2">H&nbsp;&nbsp;<font size="1" color="#808080">画面のﾄｯﾌﾟへ</font><hr> h&nbsp;&nbsp;<font size="1" color="#808080">←</font></h2>
-		<h2 class="vcsj1"><div id="Half2">J&nbsp;&nbsp;<font size="1" color="#808080">行の連結</font><hr> <div id="Half4">j&nbsp;&nbsp;<font size="1" color="#808080">↓</font></h2>
-		<h2 class="vcsj1"><div id="Half2">K&nbsp;&nbsp;<font size="1" color="#808080">ヘルプ</font><hr> <div id="Half4">k&nbsp;&nbsp;<font size="1" color="#808080">↑</font></h2>
-		<h2 class="vcsj2">L&nbsp;<font size="1" color="#808080">画面のﾎﾞﾄﾑへ</font><hr> l&nbsp;&nbsp;<font size="1" color="#808080">→</font></h2>
-		<h2 class="vcsj2">;<font size="1" color="#808080">t/T/f/Fへ移動</font><hr> +<font size="1" color="#808080">次行先頭へ移動</font></h2>
-
-		<h2 class="vcsj1"><div id="Half2">:&nbsp;<font size="1" color="#808080">ｺﾏﾝﾄﾞﾓｰﾄﾞへ</font><hr> <div id="Half4">*&nbsp;&nbsp;<font size="1" color="#808080">単語検索</font></h2>
-				<h2 class="vcsj2">].&nbsp;&nbsp;<font size="1" color="#808080">misc</font><hr> }<font size="1" color="#808080">次段落先頭へ</font></h2>
-		<br>
-
-
-		<!--キーボード:五行目-->
-
-		<h2 class="vcsj3" style="margin-left:45px;">X&nbsp;&nbsp;<font size="1" color="#808080">ﾊﾞｯｸｽﾍﾟｰｽ</font><hr> x&nbsp;&nbsp;<font size="1" color="#808080">ﾊﾞｯｸｽﾍﾟｰｽ</font></h2>
-		<h2 class="vcsj1"><div id="Half2"><font color="red">C</font><font size="1" color="#808080">削除+挿入ﾓｰﾄﾞ</font><hr> <div id="Half6"><font color="red">c</font><font color="red" size="1">1,3</font><font size="1" color="#808080">削除+挿入</font></h2>
-		<h2 class="vcsj3">V&nbsp;&nbsp;<font size="1" color="#808080">ﾋﾞｼﾞｭｱﾙﾓｰﾄﾞ</font><hr> v&nbsp;&nbsp;<font size="1" color="#808080">ﾋﾞｼﾞｭｱﾙﾓｰﾄﾞ</font></h2>
-		<h2 class="vcsj2">B&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font><hr> b<font size="1" color="#808080">前の単語に移動</font></h2>
-		<h2 class="vcsj2">N&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font><hr> n&nbsp;&nbsp;<font size="1" color="#808080">検索し移動</font></h2>
-		<h2 class="vcsj1"><div id="Half">M&nbsp;<font size="1" color="#808080">画面の中間へ</font><hr> <div id="Half5">m.<font size="1" color="#808080">ﾏｰｸをつける</font></h2>
-		<h2 class="vcsj1"><div id="Half">,<font size="1" color="#808080">t/T/f/Fへ移動</font><hr> <div id="Half6"><<font color="red" size="1">3</font>&nbsp;&nbsp;<font size="1" color="#808080">タブを削除</font></h2>
-		<h2 class="vcsj1"><div id="Half2">.&nbsp;&nbsp;<font size="1" color="#808080">繰り返し</font><hr> <div id="Half6">><font color="red" size="1">3</font>&nbsp;&nbsp;<font size="1" color="#808080">タブを挿入</font></h2>
-		<h2 class="vcsj2">/.&nbsp;&nbsp;<font size="1" color="#808080">文字列検索</font><hr> ?.&nbsp;&nbsp;<font size="1" color="#808080">文字列検索</font></h2>
-		<h2 class="vcsj2">\<hr> _<font size="1" color="#808080">行先頭へ移動</font></h2>
+			<li style="float:left"><h2 style="width:100px;background-color:orange">!&nbsp;&nbsp;<font size="1" color="#808080">�O���t�B���^</font><hr><h2 style="background-color:white;margin-top:-20px;height:50px;">1<font color="red" size="1">2</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:white;margin-left:5px;>".<font color="red" size="1">1</font>&nbsp;&nbsp;<font size="1" color="#808080">�X�y�b�N</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">2</h2></h2></li> 
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">#&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">3</h2></h2></li> 
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">$&nbsp;&nbsp;<font size="1" color="#808080">�s���Ɉړ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">4</h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">%&nbsp;&nbsp;<font size="1" color="#808080">���ʂɈړ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">5</h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">&&nbsp;<font size="1" color="#808080">�u���J��Ԃ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">6</h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">'.<font size="1" color="#808080">ϰ��s�ֈړ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">7</h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">(<font size="1" color="#808080">�O���擪�ֈړ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">8</h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">)<font size="1" color="#808080">�����擪�ֈړ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">9</h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:white;margin-left:5px;">&nbsp;<hr> <h2 style="background-color:orange;margin-top:-20px;height:50px;margin-left:5px;">0<font size="1" color="#808080">�s�擪�ֈړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:orange;margin-left:5px;">=&nbsp;&nbsp;<font size="1" color="#808080">���̫�ϯ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">-<font size="1" color="#808080">�O�s�擪�ֈړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">|<font size="1" color="#808080">�ꌅ�ڂɈړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">^<font size="1" color="#808080">�s�擪�ֈړ�</font></h2></h2></li>
+		
+		</ul>
 		<br>
 		<br>
 		<br>
-	
-		<p class="vcsj4">モーション</p>
-		<p style="display:inline-block;_display:inline;"><font color="white">カーソルの移動、またはオペレータの範囲を定義しています。</font></p><br>
-		<p class="vcsj5">コマンド</p><p style="display:inline-block;_display:inline;"><font color="white">&nbsp;直接行動コマンド、<font color="red">赤文字</font>で表記されているキーを押下すると挿入モードに切り替わります。</font></p><br>
-
-		<p class="vcsj6">オペレータ</p>
-		<p style="display:inline-block;_display:inline;"><font color="white">他のコマンドと組み合わせて利用できる、テキスト編集のためのコマンドです。</font></p><br>
-		<p class="vcsj7">エクストラ</p>
-		<p style="display:inline-block;_display:inline;"><font color="white">特殊な機能や、追加入力をします。</font></p><br>
 		<br>
-
-		<h2 style="display:inline-block;_display:inline"><font color="white">例:q.</font></h2>
-		<p style="display:inline-block;_display:inline"><font color="white">&nbsp;ドットが追記されているコマンドは、char引数が必要です。</font></p>
 		<br>
 		<br>
 
-		<h2><font color="white">主要なコマンドライン</font></h2>
-		<p><font color="white">:w(保存)<br>:q(終了)<br>:q!(保存しないで終了)<br>:e f(ファイルを開く)<br>:%s/x/y/g(置換)<br>:h(ヘルプ)<br>:new(新しいファイルを作る)</font></p>
+
+		<!--�L�[�{�[�h:�O�s��-->
+		<ul style="list-style:none">
+
+			<li style="float:left"><h2 style="width:100px;margin-left:15px;background-color:yellow;margin-left:5px;">Q&nbsp;&nbsp;<font size="1" color="#808080">ex���[�h</font><hr> <h2 style="background-color:yellow;margin-left:5px;margin-top:-20px;height:50px;">q.<font size="1" color="#808080">���͋L�^�J�n</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">W<font size="1" color="#808080">���̒P��Ɉړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">w<font size="1" color="#808080">���̒P��Ɉړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">E<font size="1" color="#808080">�P�ꖖ���ֈړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">e<font size="1" color="#808080">�P�ꖖ���ֈړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;"><font color="red">R</font>&nbsp;&nbsp;<font size="1" color="#808080">�㏑�����[�h</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;">r.&nbsp;<font size="1" color="#808080">���ڰ�Ӱ��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">T.&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">t.&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">Y&nbsp;&nbsp;<font size="1" color="#808080">�R�s�[</font><hr> <h2 style="background-color:orange;margin-top:-20px;height:50px;margin-left:5px;">y<font color="red" size="1">1,3</font>&nbsp;&nbsp;<font size="1" color="#808080">�R�s�[</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">U&nbsp;<font size="1" color="#808080">�s�����ɖ߂�</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;">u&nbsp;&nbsp;<font size="1" color="#808080">���ɖ߂�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;"><font color="red">I</font>&nbsp;&nbsp;<font size="1" color="#808080">�}�����[�h</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;"><font color="red">i</font>&nbsp;&nbsp;<font size="1" color="#808080">�}�����[�h</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;"><font color="red">O</font>&nbsp;&nbsp;<font size="1" color="#808080">�O�ɊJ��</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;"><font color="red">o</font><font size="1" color="#808080">�s�ǉ��}��Ӱ��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">P&nbsp;&nbsp;<font size="1" color="#808080">�O�ɓ\��t��</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;">p<font color="red" size="1">1</font>&nbsp;&nbsp;<font size="1" color="#808080">��ɓ\��t��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">@.&nbsp;&nbsp;<font size="1" color="#808080">�L�^���Đ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">`&nbsp;&nbsp;<font size="1" color="#808080">ϰ��ֈړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">[.&nbsp;&nbsp;<font size="1" color="#808080">misc</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">{<font size="1" color="#808080">�O�i���擪��</font></h2></h2></li>
+		
+		</ul>
 		<br>
-		<h2><font color="white">他の重要なコマンド</font></h2>
-		<p><font color="white">CTRL+R:元に戻す<br>CTRL+F:ページアップ<br>CTRL+B:ページダウン<br>CTRL+E:下にスクロールする<br>CTRL+Y:上にスクロールする<br>CTRL+V:ビジュアルモードをロックする</font></p>
 		<br>
 		<br>
-		<h2><font color="white">モード</font></h2>
-		<p><font color="white"><b>ノーマルモード</b>：コマンド入力のためのモードです。</font></p>
-		<p><font color="white"><b>挿入モード</b>：テキスト編集のためのモードです。</font></p>
-		<p><font color="white"><b>ビジュアルモード</b>：テキスト選択のためのモードです。</font></p>
+		<br>
 		<br>
 		<br>
 
-		<h2><font color="white">※注意</font></h2>
-		<p><font color="white"><font color="red">(1)</font>ヤンク/ペースト/デリートコマンドはそのレジスタ(クリップボード)を使用する前に"xを使って下さい。</font></p>
-		<p><font color="white"><font color="red">(2)</font>全てのアクションは何度も繰り返し入力することができます。(2p,d2w,5i,d4jなど)</font></p>
-		<p><font color="white"><font color="red">(3)</font>カーソルを合わせた行に、入力されたコマンドが適用されます。(ddなら行を削除、>>=なら行を追加)</font></p>
-		<p><font color="white"><font color="red">(4)</font>ZZは保存して終了、ZQは保存しないで終了します。</font></p>
-		<p><font color="white"><font color="red">(5)</font>ztでカーソルをトップへ、zbでボトムへ、zzで中央へスクロールします。</font></p>
-		<p><font color="white"><font color="red">(6)</font>ggでトップのファイルを、gfでカーソル下の文字列をファイル名とみなして開きます。</font></p>
+
+		<!--�L�[�{�[�h:�l�s��-->
+		<ul style="list-style:none">
+
+			<li style="float:left"><h2 style="width:100px;margin-left:30px;background-color:yellow"><font color="red">A</font>&nbsp;&nbsp;<font size="1" color="#808080">�}�����[�h</font><hr> <h2 style="background-color:yellow;margin-left:30px;margin-top:-20px;height:50px;"><font color="red">a</font>&nbsp;&nbsp;<font size="1" color="#808080">�}�����[�h</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;"><font color="red">S</font><font size="1" color="#808080">�폜+�}��Ӱ��</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;"><font color="red">s</font><font size="1" color="#808080">�폜+�}��Ӱ��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">D&nbsp;<font size="1" color="#808080">�s���܂ō폜</font><hr> <h2 style="background-color:orange;margin-top:-20px;height:50px;margin-left:5px;">d<font color="red" size="1">1,3</font>&nbsp;&nbsp;<font size="1" color="#808080">�폜</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">F.&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">f.&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">G&nbsp;&nbsp;<font size="1" color="#808080">���тֈړ�</font><hr> <h2 style="background-color:white;margin-top:-20px;height:50px;margin-left:5px;">g.<font color="red" size="1">6</font>&nbsp;<font size="1" color="#808080">����׺����</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">H&nbsp;&nbsp;<font size="1" color="#808080">��ʂ�į�߂�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">h&nbsp;&nbsp;<font size="1" color="#808080">��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">J&nbsp;&nbsp;<font size="1" color="#808080">�s�̘A��</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">j&nbsp;&nbsp;<font size="1" color="#808080">��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">K&nbsp;&nbsp;<font size="1" color="#808080">�w���v</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">k&nbsp;&nbsp;<font size="1" color="#808080">��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">L&nbsp;<font size="1" color="#808080">��ʂ����т�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">l&nbsp;&nbsp;<font size="1" color="#808080">��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">;<font size="1" color="#808080">t/T/f/F�ֈړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">+<font size="1" color="#808080">���s�擪�ֈړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">:&nbsp;<font size="1" color="#808080">�����Ӱ�ނ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">*&nbsp;&nbsp;<font size="1" color="#808080">�P�ꌟ��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">].&nbsp;&nbsp;<font size="1" color="#808080">misc</font><hr><h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;"> }<font size="1" color="#808080">���i���擪��</font></h2></h2></li>
+		
+		</ul>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+		<!--�L�[�{�[�h:�܍s��-->
+		<ul style="list-style:none">
+
+			<li style="float:left"><h2 style="width:100px;margin-left:45px;background-color:white">Z&nbsp;&nbsp;<font size="1" color="#808080">�I��</font><hr> <h2 style="background-color:white;margin-left:45px;margin-top:-20px;height:50px;">z&nbsp;&nbsp;<font size="1" color="#808080">����R�}���h</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">X&nbsp;&nbsp;<font size="1" color="#808080">�ޯ���߰�</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;">x&nbsp;&nbsp;<font size="1" color="#808080">�ޯ���߰�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;"><font color="red">C</font><font size="1" color="#808080">�폜+�}��Ӱ��</font><hr> <h2 style="background-color:orange;margin-top:-20px;height:50px;margin-left:5px;"><font color="red">c</font><font color="red" size="1">1,3</font><font size="1" color="#808080">�폜+�}��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">V&nbsp;&nbsp;<font size="1" color="#808080">�޼ޭ��Ӱ��</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;">v&nbsp;&nbsp;<font size="1" color="#808080">�޼ޭ��Ӱ��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">B&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">b<font size="1" color="#808080">�O�̒P��Ɉړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">N&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">n&nbsp;&nbsp;<font size="1" color="#808080">�������ړ�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">M&nbsp;<font size="1" color="#808080">��ʂ̒��Ԃ�</font><hr> <h2 style="background-color:yellow;margin-top:-20px;height:50px;margin-left:5px;">m.<font size="1" color="#808080">ϰ�������</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">,<font size="1" color="#808080">t/T/f/F�ֈړ�</font><hr> <h2 style="background-color:orange;margin-top:-20px;height:50px;margin-left:5px;"><<font color="red" size="1">3</font>&nbsp;&nbsp;<font size="1" color="#808080">�^�u���폜</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:yellow;margin-left:5px;">.&nbsp;&nbsp;<font size="1" color="#808080">�J��Ԃ�</font><hr> <h2 style="background-color:orange;margin-top:-20px;height:50px;margin-left:5px;">><font color="red" size="1">3</font>&nbsp;&nbsp;<font size="1" color="#808080">�^�u��}��</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">/.&nbsp;&nbsp;<font size="1" color="#808080">�����񌟍�</font><hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">?.&nbsp;&nbsp;<font size="1" color="#808080">�����񌟍�</font></h2></h2></li>
+			<li style="float:left"><h2 style="width:100px;background-color:lime;margin-left:5px;">�_<hr> <h2 style="background-color:lime;margin-top:-20px;height:50px;margin-left:5px;">_<font size="1" color="#808080">�s�擪�ֈړ�</font></h2></h2></li>
+		
+		</ul>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+
+
+		<p style="display:inline-block;_display:inline;background-color:lime;width:100px;"><b>���[�V����</b></p>
+		<p style="display:inline-block;_display:inline;"><font color="white">�J�[�\���̈ړ��A�܂��̓I�y���[�^�͈̔͂��`���Ă��܂��B</font></p><br>
+		<p style="display:inline-block;_display:inline;background-color:yellow;width:100px;"><b>�R�}���h</b></p>
+		<p style="display:inline-block;_display:inline;"><font color="white">&nbsp;���ڍs���R�}���h�A<font color="red">�ԕ���</font>�ŕ\�L����Ă���L�[����������Ƒ}�����[�h�ɐ؂�ւ��܂��B</font></p><br>
+		<p style="display:inline-block;_display:inline;background-color:orange;width:100px;"><b>�I�y���[�^</b></p>
+		<p style="display:inline-block;_display:inline;"><font color="white">���̃R�}���h�Ƒg�ݍ��킹�ė��p�ł���A�e�L�X�g�ҏW�̂��߂̃R�}���h�ł��B</font></p><br>
+		<p style="display:inline-block;_display:inline;background-color:white;width:100px;"><b>�G�N�X�g��</b></p>
+		<p style="display:inline-block;_display:inline;"><font color="white">����ȋ@�\��A�ǉ����͂����܂��B</font></p><br>
+		<br>
+
+
+		<h2 style="display:inline-block;_display:inline"><font color="white">��:q.</font></h2>
+		<p style="display:inline-block;_display:inline"><font color="white">&nbsp;�h�b�g���ǋL����Ă���R�}���h�́Achar�������K�v�ł��B</font></p>
+		<br>
+		<br>
+
+		<h2><font color="white">��v�ȃR�}���h���C��</font></h2>
+		<p><font color="white">:w(�ۑ�)<br>:q(�I��)<br>:q!(�ۑ����Ȃ��ŏI��)<br>:e f(�t�@�C�����J��)<br>:%s/x/y/g(�u��)<br>:h(�w���v)<br>:new(�V�����t�@�C�������)</font></p>
+		<br>
+		<h2><font color="white">���̏d�v�ȃR�}���h</font></h2>
+		<p><font color="white">CTRL+R:���ɖ߂�<br>CTRL+F:�y�[�W�A�b�v<br>CTRL+B:�y�[�W�_�E��<br>CTRL+E:���ɃX�N���[������<br>CTRL+Y:��ɃX�N���[������<br>CTRL+V:�r�W���A�����[�h�����b�N����</font></p>
+		<br>
+		<br>
+		<h2><font color="white">���[�h</font></h2>
+		<p><font color="white"><b>�m�[�}�����[�h</b>�F�R�}���h���͂̂��߂̃��[�h�ł��B</font></p>
+		<p><font color="white"><b>�}�����[�h</b>�F�e�L�X�g�ҏW�̂��߂̃��[�h�ł��B</font></p>
+		<p><font color="white"><b>�r�W���A�����[�h</b>�F�e�L�X�g�I���̂��߂̃��[�h�ł��B</font></p>
+		<br>
+		<br>
+
+		<h2><font color="white">������</font></h2>
+		<p><font color="white"><font color="red">(1)</font>�����N/�y�[�X�g/�f���[�g�R�}���h�͂��̃��W�X�^(�N���b�v�{�[�h)���g�p����O��"x���g���ĉ������B</font></p>
+		<p><font color="white"><font color="red">(2)</font>�S�ẴA�N�V�����͉��x���J��Ԃ����͂��邱�Ƃ��ł��܂��B(2p,d2w,5i,d4j�Ȃ�)</font></p>
+		<p><font color="white"><font color="red">(3)</font>�J�[�\�������킹���s�ɁA���͂��ꂽ�R�}���h���K�p����܂��B(dd�Ȃ�s���폜�A>>=�Ȃ�s��ǉ�)</font></p>
+		<p><font color="white"><font color="red">(4)</font>ZZ�͕ۑ����ďI���AZQ�͕ۑ����Ȃ��ŏI�����܂��B</font></p>
+		<p><font color="white"><font color="red">(5)</font>zt�ŃJ�[�\�����g�b�v�ցAzb�Ń{�g���ցAzz�Œ����փX�N���[�����܂��B</font></p>
+		<p><font color="white"><font color="red">(6)</font>gg�Ńg�b�v�̃t�@�C�����Agf�ŃJ�[�\�����̕�������t�@�C�����Ƃ݂Ȃ��ĊJ���܂��B</font></p>
 		<br>
 	</body>
 

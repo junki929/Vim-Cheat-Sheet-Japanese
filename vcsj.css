@@ -1,21 +1,42 @@
-h2.vcsj1 {border:outset;background-color:#FFFFFF;width:98px;height:50px;display:inline-block;_display:inline;}
-h2.vcsj2 {border:outset;background-color:lime;width:98px;height:50px;display:inline-block;_display:inline;}
-h2.vcsj3 {border:outset;background-color:yellow;width:98px;height:50px;display:inline-block;_display:inline;}
-p.vcsj4 {border:outset;background-color:lime;width:98px;font-weight:bolder;display:inline-block;_display:inline;}
-p.vcsj5 {border:outset;background-color:yellow;width:98px;font-weight:bolder;display:inline-block;_display:inline;}
-p.vcsj6 {border:outset;background-color:orange;width:98px;font-weight:bolder;display:inline-block;_display:inline;}
-p.vcsj7 {border:outset;background-color:white;width:98px;font-weight:bolder;display:inline-block;_display:inline;}
-
-hr {padding: 0; margin: 0;}
-#Half{background-color:lime;height:25px;right:0px;width:98px;}
-#Half2{background-color:yellow;height:25px;right:0px;width:98px;}
-#Half3{background-color:orange;height:25px;right:0px;width:98px;}
-#Half4{background-color:lime;height:25px;right:0px;width:98px;}
-#Half5{background-color:yellow;height:25px;right:0px;width:98px;}
-#Half6{background-color:orange;height:25px;right:0px;width:98px;}
-
-.half{margin: 0; padding: 0; height: 25px;}
-.key{margin: 0; padding: 0; height: 50px;}
-.lime{background-color:lime;}
-.yellow{background-color:yellow;}
-.orange{background-color:orange;}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1187.39">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Courier; color: #333333}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Courier; color: #333333; min-height: 14.0px}
+    span.s1 {color: #000080}
+    span.s2 {color: #445588}
+    span.s3 {color: #009999}
+    span.s4 {color: #0086b3}
+    span.s5 {color: #990000}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">h2</span><span class="s2"><b>.vcsj1</b></span> {<b>border:outset</b>;<b>background-color:</b><span class="s3">#FFFFFF</span>;<b>width:</b><span class="s3">98px</span>;<b>height:</b><span class="s3">50px</span>;<b>display:inline-block</b>;_display<b>:inline</b>;}</p>
+<p class="p1"><span class="s1">h2</span><span class="s2"><b>.vcsj2</b></span> {<b>border:outset</b>;<b>background-color:</b><span class="s4">lime</span>;<b>width:</b><span class="s3">98px</span>;<b>height:</b><span class="s3">50px</span>;<b>display:inline-block</b>;_display<b>:inline</b>;}</p>
+<p class="p1"><span class="s1">h2</span><span class="s2"><b>.vcsj3</b></span> {<b>border:outset</b>;<b>background-color:</b><span class="s4">yellow</span>;<b>width:</b><span class="s3">98px</span>;<b>height:</b><span class="s3">50px</span>;<b>display:inline-block</b>;_display<b>:inline</b>;}</p>
+<p class="p1"><span class="s1">p</span><span class="s2"><b>.vcsj4</b></span> {<b>border:outset</b>;<b>background-color:</b><span class="s4">lime</span>;<b>width:</b><span class="s3">98px</span>;<b>font-weight:bolder</b>;<b>display:inline-block</b>;_display<b>:inline</b>;}</p>
+<p class="p1"><span class="s1">p</span><span class="s2"><b>.vcsj5</b></span> {<b>border:outset</b>;<b>background-color:</b><span class="s4">yellow</span>;<b>width:</b><span class="s3">98px</span>;<b>font-weight:bolder</b>;<b>display:inline-block</b>;_display<b>:inline</b>;}</p>
+<p class="p1"><span class="s1">p</span><span class="s2"><b>.vcsj6</b></span> {<b>border:outset</b>;<b>background-color:</b><span class="s4">orange</span>;<b>width:</b><span class="s3">98px</span>;<b>font-weight:bolder</b>;<b>display:inline-block</b>;_display<b>:inline</b>;}</p>
+<p class="p1"><span class="s1">p</span><span class="s2"><b>.vcsj7</b></span> {<b>border:outset</b>;<b>background-color:</b><span class="s4">white</span>;<b>width:</b><span class="s3">98px</span>;<b>font-weight:bolder</b>;<b>display:inline-block</b>;_display<b>:inline</b>;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="s1">hr</span> {<b>padding:</b> <span class="s3">0</span>; <b>margin:</b> <span class="s3">0</span>;}</p>
+<p class="p1"><span class="s5"><b>#Half</b></span>{<b>background-color:</b><span class="s4">lime</span>;<b>height:</b><span class="s3">25px</span>;<b>right:</b><span class="s3">0px</span>;<b>width:</b><span class="s3">98px</span>;}</p>
+<p class="p1"><span class="s5"><b>#Half2</b></span>{<b>background-color:</b><span class="s4">yellow</span>;<b>height:</b><span class="s3">25px</span>;<b>right:</b><span class="s3">0px</span>;<b>width:</b><span class="s3">98px</span>;}</p>
+<p class="p1"><span class="s5"><b>#Half3</b></span>{<b>background-color:</b><span class="s4">orange</span>;<b>height:</b><span class="s3">25px</span>;<b>right:</b><span class="s3">0px</span>;<b>width:</b><span class="s3">98px</span>;}</p>
+<p class="p1"><span class="s5"><b>#Half4</b></span>{<b>background-color:</b><span class="s4">lime</span>;<b>height:</b><span class="s3">25px</span>;<b>right:</b><span class="s3">0px</span>;<b>width:</b><span class="s3">98px</span>;}</p>
+<p class="p1"><span class="s5"><b>#Half5</b></span>{<b>background-color:</b><span class="s4">yellow</span>;<b>height:</b><span class="s3">25px</span>;<b>right:</b><span class="s3">0px</span>;<b>width:</b><span class="s3">98px</span>;}</p>
+<p class="p1"><span class="s5"><b>#Half6</b></span>{<b>background-color:</b><span class="s4">orange</span>;<b>height:</b><span class="s3">25px</span>;<b>right:</b><span class="s3">0px</span>;<b>width:</b><span class="s3">98px</span>;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="s2"><b>.half</b></span>{<b>margin:</b> <span class="s3">0</span>; <b>padding:</b> <span class="s3">0</span>; <b>height:</b> <span class="s3">25px</span>;}</p>
+<p class="p1"><span class="s2"><b>.key</b></span>{<b>margin:</b> <span class="s3">0</span>; <b>padding:</b> <span class="s3">0</span>; <b>height:</b> <span class="s3">50px</span>;}</p>
+<p class="p1"><span class="s2"><b>.lime</b></span>{<b>background-color:</b><span class="s4">lime</span>;}</p>
+<p class="p1"><span class="s2"><b>.yellow</b></span>{<b>background-color:</b><span class="s4">yellow</span>;}</p>
+<p class="p1"><span class="s2"><b>.orange</b></span>{<b>background-color:</b><span class="s4">orange</span>;}</p>
+</body>
+</html>
